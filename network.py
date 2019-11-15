@@ -28,12 +28,3 @@ def gradient_descent(f, init_x, lr=0.01, step_num=100):
         x -= lr * grad
 
     return x
-
-
-def function_test(x):
-    return np.sum(x**2)
-
-
-init = np.array([-3.0, 4.0])
-y = gradient_descent(function_test, init, lr=0.1, step_num=100)
-print(y)
